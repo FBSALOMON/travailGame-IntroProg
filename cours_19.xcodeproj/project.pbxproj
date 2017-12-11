@@ -12,6 +12,12 @@
 		9B88871C1FD6DBF800D291DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B88871A1FD6DBF800D291DF /* Main.storyboard */; };
 		9B88871E1FD6DBF800D291DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B88871D1FD6DBF800D291DF /* Assets.xcassets */; };
 		9B8887211FD6DBF800D291DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B88871F1FD6DBF800D291DF /* LaunchScreen.storyboard */; };
+		9B8887291FD6DC1D00D291DF /* wheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B8887281FD6DC1D00D291DF /* wheel.png */; };
+		9B88872B1FD6E7A200D291DF /* fireball.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B88872A1FD6E7A200D291DF /* fireball.png */; };
+		9B88872D1FD6E9EB00D291DF /* kobolt.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B88872C1FD6E9EB00D291DF /* kobolt.png */; };
+		9B88872F1FD6F70A00D291DF /* elminster.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B88872E1FD6F70A00D291DF /* elminster.png */; };
+		9B8887311FD6F85500D291DF /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B8887301FD6F85500D291DF /* bg.png */; };
+		9B8887331FD6FCBD00D291DF /* KoboldDie.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B8887321FD6FCBD00D291DF /* KoboldDie.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		9B88871D1FD6DBF800D291DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B8887201FD6DBF800D291DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B8887221FD6DBF800D291DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B8887281FD6DC1D00D291DF /* wheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel.png; sourceTree = "<group>"; };
+		9B88872A1FD6E7A200D291DF /* fireball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fireball.png; sourceTree = "<group>"; };
+		9B88872C1FD6E9EB00D291DF /* kobolt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kobolt.png; sourceTree = "<group>"; };
+		9B88872E1FD6F70A00D291DF /* elminster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elminster.png; sourceTree = "<group>"; };
+		9B8887301FD6F85500D291DF /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		9B8887321FD6FCBD00D291DF /* KoboldDie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KoboldDie.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +67,13 @@
 			isa = PBXGroup;
 			children = (
 				9B8887161FD6DBF800D291DF /* AppDelegate.swift */,
+				9B8887281FD6DC1D00D291DF /* wheel.png */,
+				9B88872E1FD6F70A00D291DF /* elminster.png */,
+				9B8887321FD6FCBD00D291DF /* KoboldDie.png */,
 				9B8887181FD6DBF800D291DF /* ViewController.swift */,
+				9B88872C1FD6E9EB00D291DF /* kobolt.png */,
+				9B8887301FD6F85500D291DF /* bg.png */,
+				9B88872A1FD6E7A200D291DF /* fireball.png */,
 				9B88871A1FD6DBF800D291DF /* Main.storyboard */,
 				9B88871D1FD6DBF800D291DF /* Assets.xcassets */,
 				9B88871F1FD6DBF800D291DF /* LaunchScreen.storyboard */,
@@ -123,7 +141,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B8887331FD6FCBD00D291DF /* KoboldDie.png in Resources */,
 				9B8887211FD6DBF800D291DF /* LaunchScreen.storyboard in Resources */,
+				9B8887291FD6DC1D00D291DF /* wheel.png in Resources */,
+				9B8887311FD6F85500D291DF /* bg.png in Resources */,
+				9B88872F1FD6F70A00D291DF /* elminster.png in Resources */,
+				9B88872D1FD6E9EB00D291DF /* kobolt.png in Resources */,
+				9B88872B1FD6E7A200D291DF /* fireball.png in Resources */,
 				9B88871E1FD6DBF800D291DF /* Assets.xcassets in Resources */,
 				9B88871C1FD6DBF800D291DF /* Main.storyboard in Resources */,
 			);
