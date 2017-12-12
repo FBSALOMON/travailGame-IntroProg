@@ -112,12 +112,13 @@
                         <outlet property="Player" destination="3C9-3O-vvk" id="JuV-Dw-VtE"/>
                         <outlet property="ball" destination="9C7-uf-WX9" id="EMA-Cg-2uh"/>
                         <outlet property="damageView" destination="pQ4-6R-QaC" id="VdQ-pe-WUq"/>
-                        <outlet property="enemyAttack" destination="y70-sr-eju" id="5Fl-jh-Tzb"/>
+                        <outlet property="enemyAttackImage" destination="qGl-7f-kME" id="p1Y-oC-RVr"/>
+                        <outlet property="enemyAttackView" destination="y70-sr-eju" id="5Fl-jh-Tzb"/>
                         <outlet property="expAtual" destination="Zo9-zR-Bqq" id="CBc-jp-HKL"/>
                         <outlet property="fireBall" destination="Q5Y-Nm-B2j" id="0QF-Ff-qli"/>
-                        <outlet property="kobold" destination="ns4-12-Dui" id="QoD-2S-lF7"/>
                         <outlet property="levelLabel" destination="UWW-MB-02N" id="SsW-fC-cmo"/>
                         <outlet property="lifeView" destination="PWu-MS-rXs" id="U3y-uj-9QA"/>
+                        <outlet property="monsterImage" destination="ns4-12-Dui" id="QoD-2S-lF7"/>
                         <outlet property="target" destination="vvm-fw-izB" id="Ajx-Te-dHT"/>
                     </connections>
                 </viewController>
