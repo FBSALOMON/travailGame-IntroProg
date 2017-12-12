@@ -15,15 +15,19 @@ class ViewController: UIViewController {
     var aTimerEnemy: Timer!
     var cos: Double!
     var sin: Double!
+    var cosEnemy: Double!
+    var sinEnemy: Double!
     var distance = 0
     var distanceEnemy = 0
     let loop = true
+    var numberOfAttacks = 0
     //--------------------
     override func viewDidLoad() {
         super.viewDidLoad()
         ball.layer.cornerRadius = 12.5
         target.layer.cornerRadius = 12.5
         enemyAttack.layer.cornerRadius = 12.5
+        enemyAttackAnimation()
         
     }
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -40,7 +44,6 @@ class ViewController: UIViewController {
                 if (touch.location(in: self.view).y > UIScreen.main.bounds.height - Elminster.frame.height ) {
                     return
                 }
-                kobold.image = UIImage(named: "kobolt.png")
                 if touch.view == self.view {
                     if aTimer != nil {
                         aTimer.invalidate()
@@ -75,16 +78,22 @@ class ViewController: UIViewController {
             return
         }
         if ball.frame.intersects(target.frame) {
-            kobold.image = UIImage(named: "KoboldDie.png")
+            self.aTimerEnemy.invalidate()
+            self.aTimerEnemy = nil
+            kobold.image = UIImage(named: "lightElementalDead.png")
             ball.center.x = -15
             ball.center.y = -15
             aTimer.invalidate()
             aTimer = nil
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-                self.kobold.image = UIImage(named: "kobolt.png")
+                self.kobold.image = UIImage(named: "lightElemental.png")
                 self.target.center.x = CGFloat(arc4random_uniform(UInt32(UIScreen.main.bounds.width - 181)) + 100)
                 self.target.center.y = (CGFloat(arc4random_uniform(UInt32(UIScreen.main.bounds.width - 500)) + 85))
                 self.distance = 0
+                self.numberOfAttacks = 0
+                self.enemyAttack.center.x = self.target.center.x
+                self.enemyAttack.center.y = self.target.center.y
+                self.enemyAttackAnimation()
             })
         }
         ball.center.x += CGFloat(cos)
@@ -94,35 +103,55 @@ class ViewController: UIViewController {
     //--------------------
     
     //--------------------
-  /*  func enemyAttackAnimation() {
+    func enemyAttackAnimation() {
+        changeMonsterAttackDirection()
         if aTimerEnemy != nil {
             aTimerEnemy.invalidate()
             aTimerEnemy = nil
         }
-        aTimerEnemy = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(animateEnemy), userInfo: nil, repeats: true)
+        aTimerEnemy = Timer.scheduledTimer(timeInterval: 0.002, target: self, selector: #selector(animateEnemy), userInfo: nil, repeats: true)
+    }
+    
+    func changeMonsterPosition() {
+        if numberOfAttacks > 3 {
+            self.target.center.x = CGFloat(arc4random_uniform(UInt32(UIScreen.main.bounds.width - 181)) + 100)
+            self.target.center.y = (CGFloat(arc4random_uniform(UInt32(UIScreen.main.bounds.width - 500)) + 85))
+            numberOfAttacks = 0
+            changeMonsterAttackDirection()
+        }
+    }
+    
+    func changeMonsterAttackDirection() {
+        let opp = CGFloat(arc4random_uniform(200))+(target.center.y - (Player.center.y)) - CGFloat(arc4random_uniform(200))
+        let adj = CGFloat(arc4random_uniform(200)) + (target.center.x - (Player.center.x)) - CGFloat(arc4random_uniform(200))
+        let radians = atan2f(Float(opp),Float(adj))
+        let degrees = radians * 180 / Float(Double.pi)
+        cosEnemy = __cospi(Double(degrees/180))
+        sinEnemy = __sinpi(Double(degrees/180))
     }
     
     @objc func animateEnemy() {
         
         if distanceEnemy > 1250 {
-            aTimerEnemy.invalidate()
-            aTimerEnemy = nil
             enemyAttack.center.x = target.center.x
             enemyAttack.center.y = target.center.y
             distanceEnemy = 0
+            numberOfAttacks += 1
+            changeMonsterAttackDirection()
+            changeMonsterPosition()
             return
         }
         if enemyAttack.frame.intersects(Player.frame) {
-            Elminster.image = UIImage(named: "KoboldDie.png")
+            Elminster.image = UIImage(named: "ElminsterDieLight.png")
             enemyAttack.center.x = target.center.x
             enemyAttack.center.y = target.center.y
             aTimerEnemy.invalidate()
             aTimerEnemy = nil
             distanceEnemy = 0
         }
-        enemyAttack.center.x = CGFloat(target.center.x)
-        enemyAttack.center.y += CGFloat(1)
+        enemyAttack.center.x -= CGFloat(cosEnemy)
+        enemyAttack.center.y -= CGFloat(sinEnemy)
         distanceEnemy += 1
-    }*/
+    }
 }
 //==================

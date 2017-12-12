@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B872DF11FE0362700402E6E /* lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B872DF01FE0362700402E6E /* lightning.png */; };
+		9B872DF41FE037C100402E6E /* ElminsterDieLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B872DF31FE037C000402E6E /* ElminsterDieLight.png */; };
+		9B872DF61FE03B6000402E6E /* lightElemental.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B872DF51FE03B6000402E6E /* lightElemental.png */; };
+		9B872DF81FE03BDE00402E6E /* lightElementalDead.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B872DF71FE03BDE00402E6E /* lightElementalDead.png */; };
 		9B8887171FD6DBF800D291DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8887161FD6DBF800D291DF /* AppDelegate.swift */; };
 		9B8887191FD6DBF800D291DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8887181FD6DBF800D291DF /* ViewController.swift */; };
 		9B88871C1FD6DBF800D291DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B88871A1FD6DBF800D291DF /* Main.storyboard */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B872DF01FE0362700402E6E /* lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightning.png; sourceTree = "<group>"; };
+		9B872DF31FE037C000402E6E /* ElminsterDieLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ElminsterDieLight.png; path = cours_19/ElminsterDieLight.png; sourceTree = SOURCE_ROOT; };
+		9B872DF51FE03B6000402E6E /* lightElemental.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightElemental.png; sourceTree = "<group>"; };
+		9B872DF71FE03BDE00402E6E /* lightElementalDead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightElementalDead.png; sourceTree = "<group>"; };
 		9B8887131FD6DBF800D291DF /* cours_19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cours_19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B8887161FD6DBF800D291DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B8887181FD6DBF800D291DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B872DF21FE0379900402E6E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9B8887281FD6DC1D00D291DF /* wheel.png */,
+				9B88872E1FD6F70A00D291DF /* elminster.png */,
+				9B8887321FD6FCBD00D291DF /* KoboldDie.png */,
+				9B872DF31FE037C000402E6E /* ElminsterDieLight.png */,
+				9B872DF51FE03B6000402E6E /* lightElemental.png */,
+				9B872DF01FE0362700402E6E /* lightning.png */,
+				9B872DF71FE03BDE00402E6E /* lightElementalDead.png */,
+				9B88872C1FD6E9EB00D291DF /* kobolt.png */,
+				9B8887301FD6F85500D291DF /* bg.png */,
+				9B88872A1FD6E7A200D291DF /* fireball.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		9B88870A1FD6DBF800D291DF = {
 			isa = PBXGroup;
 			children = (
@@ -67,13 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				9B8887161FD6DBF800D291DF /* AppDelegate.swift */,
-				9B8887281FD6DC1D00D291DF /* wheel.png */,
-				9B88872E1FD6F70A00D291DF /* elminster.png */,
-				9B8887321FD6FCBD00D291DF /* KoboldDie.png */,
 				9B8887181FD6DBF800D291DF /* ViewController.swift */,
-				9B88872C1FD6E9EB00D291DF /* kobolt.png */,
-				9B8887301FD6F85500D291DF /* bg.png */,
-				9B88872A1FD6E7A200D291DF /* fireball.png */,
+				9B872DF21FE0379900402E6E /* Images */,
 				9B88871A1FD6DBF800D291DF /* Main.storyboard */,
 				9B88871D1FD6DBF800D291DF /* Assets.xcassets */,
 				9B88871F1FD6DBF800D291DF /* LaunchScreen.storyboard */,
@@ -143,12 +163,16 @@
 			files = (
 				9B8887331FD6FCBD00D291DF /* KoboldDie.png in Resources */,
 				9B8887211FD6DBF800D291DF /* LaunchScreen.storyboard in Resources */,
+				9B872DF81FE03BDE00402E6E /* lightElementalDead.png in Resources */,
+				9B872DF11FE0362700402E6E /* lightning.png in Resources */,
 				9B8887291FD6DC1D00D291DF /* wheel.png in Resources */,
+				9B872DF61FE03B6000402E6E /* lightElemental.png in Resources */,
 				9B8887311FD6F85500D291DF /* bg.png in Resources */,
 				9B88872F1FD6F70A00D291DF /* elminster.png in Resources */,
 				9B88872D1FD6E9EB00D291DF /* kobolt.png in Resources */,
 				9B88872B1FD6E7A200D291DF /* fireball.png in Resources */,
 				9B88871E1FD6DBF800D291DF /* Assets.xcassets in Resources */,
+				9B872DF41FE037C100402E6E /* ElminsterDieLight.png in Resources */,
 				9B88871C1FD6DBF800D291DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
