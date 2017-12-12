@@ -65,6 +65,37 @@
                                     </imageView>
                                 </subviews>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dYJ-dk-XJv" userLabel="Experiencia">
+                                <rect key="frame" x="508" y="16" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zo9-zR-Bqq" userLabel="EXP_ATUAL">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.14628694757498784" blue="0.0046744888945186025" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LEVEL : 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWW-MB-02N">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PWu-MS-rXs" userLabel="Life">
+                                <rect key="frame" x="274" y="862" width="113" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pQ4-6R-QaC" userLabel="Damage">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="10"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.13182058469846847" blue="0.0003364656780094899" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12800932678374854" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -80,8 +111,13 @@
                         <outlet property="Elminster" destination="1YZ-la-xn9" id="Fv1-Vp-K1C"/>
                         <outlet property="Player" destination="3C9-3O-vvk" id="JuV-Dw-VtE"/>
                         <outlet property="ball" destination="9C7-uf-WX9" id="EMA-Cg-2uh"/>
+                        <outlet property="damageView" destination="pQ4-6R-QaC" id="VdQ-pe-WUq"/>
                         <outlet property="enemyAttack" destination="y70-sr-eju" id="5Fl-jh-Tzb"/>
+                        <outlet property="expAtual" destination="Zo9-zR-Bqq" id="CBc-jp-HKL"/>
+                        <outlet property="fireBall" destination="Q5Y-Nm-B2j" id="0QF-Ff-qli"/>
                         <outlet property="kobold" destination="ns4-12-Dui" id="QoD-2S-lF7"/>
+                        <outlet property="levelLabel" destination="UWW-MB-02N" id="SsW-fC-cmo"/>
+                        <outlet property="lifeView" destination="PWu-MS-rXs" id="U3y-uj-9QA"/>
                         <outlet property="target" destination="vvm-fw-izB" id="Ajx-Te-dHT"/>
                     </connections>
                 </viewController>
